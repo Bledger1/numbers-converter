@@ -2,7 +2,7 @@ def converter(number):
   number = str(number)
   digits = [number[i] for i in range(len(number))]
   outline = ""
-  notation = {1: '', 2: 'K', 3: 'М', 4: 'Б', 5: 'Т', 6: 'Q'}
+  notation = {1: '', 2: 'K', 3: 'М', 4: 'B', 5: 'Т', 6: 'Q'}
   step = 1
   while len(digits) // 3 != 0:  # Пока в длине числа помещается хотя бы одна тройка
       if step > len(notation):
